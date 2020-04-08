@@ -20,6 +20,7 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".CountryActivity" />
         <activity android:name=".DeleteActivity" />
+        <activity android:name=".CountryViewActivity" />
     </application>
 
 </manifest>

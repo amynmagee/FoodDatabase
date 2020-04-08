@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         scrollView = findViewById(R.id.scrollView);
+
+
+    }
+
+    public void onResume(){
+        super.onResume();
         scrollView.removeAllViewsInLayout();
         DatabaseManager dbm = new DatabaseManager(this);
         ArrayList<String> list = dbm.getDish();

@@ -81,7 +81,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     public void delete (String deleteDish){
         SQLiteDatabase db = getWritableDatabase();
-        String sql = "delete from FoodTable where title = '"+deleteDish+"'";
+        String sql = "delete from FoodTable where dish = '"+deleteDish+"'";
         db.execSQL(sql);
         db.close();
     }
